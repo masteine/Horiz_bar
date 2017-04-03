@@ -297,19 +297,19 @@ body
 		h2 
 			font-size: 1.7em
 	.left_head_price
-		font-size: 1.2em
+		font-size: 1.25em
 		display: inline
 		background-image: url("#{$get-path-to-img}/bg_price_turnik_1.png")
 		width: 400px
 		height: 60px
 		float: left
 		padding-top: 10px
-		padding-left: 10%
+		padding-left: 8%
 		z-index: -1
 		h2 
 			display: inline
 	.right_head_price
-		margin-left: 310px
+		margin-left: 300px
 		position: absolute
 		height: 60px
 		padding: 15px
@@ -318,7 +318,6 @@ body
 		z-index: 15
 		&:hover
 			transform: scale(1.09)
-
 	.turnik_image_small
 		margin-top: 5px
 	img 
@@ -326,6 +325,66 @@ body
 	.text_characteristic
 		float: right
 		font-family: "HelveticaNeueCyr-Light"
-
+		color: rgb(51, 51, 51)
+		line-height: 1.3
 		h3 
-			font-size: 1.4em
+			font-size: 1.3em
+			padding-bottom: 20px
+		h3#install_text
+			padding: 20px 0
+
+// 		==========================		 order_a_istall - 5 === layout
+.order_a_instal
+	margin-top: -10px
+	width: 100%
+	height: 110px
+	background-image: url("#{$get-path-to-img}/bg_order_aft_char.png")
+	background-size: 100% 100%
+	.container_order_a_instal
+		max-width: 970px
+		margin: 0 auto
+	.form_action
+		padding-top: 3%
+	input[type="text"], input[type="phone_number"]
+		font-family: "HelveticaNeueCyr-Italic"
+		padding: 12px 10px
+		margin-left: 1%
+		display: inline
+		font-size: 1.1em
+	input[type="submit"]
+		display: inline
+		background: url("#{$get-path-to-img}/order_button_layout_2.png") no-repeat
+		border: none
+		color: rgb(255, 255, 255)
+		text-transform: uppercase
+		font-family: "HelveticaNeueCyr-Light"
+		font-size: 1.5em
+		line-height: 1.2
+		height: 60px
+		width: 21%
+		margin-left: 1%
+		&:hover
+			transform: scale(1.09)
+
+// 		==========================		 description - 6 === layout
+.description
+	width: 100%
+	height: 440px
+	background-image: url("#{$get-path-to-img}/bg_description.png")
+	background-size: cover
+	.container_description
+		max-width: 970px
+		margin: 0 auto
+	h2 
+		font-family: "HelveticaNeueCyr-Light"
+		color: rgb(255, 255, 255)
+		font-size: 2.2em
+		text-transform: uppercase
+		text-align: center
+		padding: 5% 0
+	p 
+		font-size: 1.0em
+		line-height: 1.4
+		font-family: "HelveticaNeueCyr-Light"
+		color: rgb(255, 255, 255)
+		margin-bottom: 18px
