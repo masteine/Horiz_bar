@@ -276,8 +276,8 @@ body {
   .characteristic .container_characteristic {
     max-width: 970px;
     margin: 0 auto; }
-  .characteristic .head {
-    height: 125px;
+  .characteristic .head_characteristic {
+    max-height: 11%;
     padding: 40px 0;
     color: #333333;
     font-family: "HelveticaNeueCyr-Light";
@@ -285,26 +285,44 @@ body {
     text-transform: uppercase;
     text-align: center; }
   .characteristic .price_img_turnik {
-    width: 43%; }
+    width: 410px; }
   .characteristic .price_head {
     font-family: "HelveticaNeueCyr-Medium";
     color: white;
-    width: 100%;
+    width: 410px;
     height: 60px; }
     .characteristic .price_head h2 {
       font-size: 1.7em; }
   .characteristic .left_head_price {
+    font-size: 1.2em;
+    display: inline;
     background-image: url("img/bg_price_turnik_1.png");
-    width: 410px;
+    width: 400px;
     height: 60px;
     float: left;
-    padding: 1px 2px;
-    text-align: center; }
+    padding-top: 10px;
+    padding-left: 10%;
+    z-index: -1; }
+    .characteristic .left_head_price h2 {
+      display: inline; }
   .characteristic .right_head_price {
-    left: 41%;
-    padding: 15px;
+    margin-left: 310px;
     position: absolute;
+    height: 60px;
+    padding: 15px;
     background-image: url("img/bg_price_turnik_2.png");
-    float: right; }
+    float: right;
+    z-index: 15; }
+    .characteristic .right_head_price:hover {
+      transform: scale(1.09); }
+  .characteristic .turnik_image_small {
+    margin-top: 5px; }
+  .characteristic img {
+    padding-right: 11px; }
+  .characteristic .text_characteristic {
+    float: right;
+    font-family: "HelveticaNeueCyr-Light"; }
+    .characteristic .text_characteristic h3 {
+      font-size: 1.4em; }
 
 /*# sourceMappingURL=main.css.map */
