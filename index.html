@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Турники, брусья, пресс (3 в 1)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/scripts.js"></script>
+	<script src="js/jquery-3.2.0.min.js"></script>
+<!-- Timer in 2 layout -->
+	<script>
+		var countDownDate = new Date("Apr 4, 2017 15:37:25").getTime();
+		var x = setInterval(function() {
+		    var now = new Date().getTime();
+		    var distance = countDownDate - now;
+		    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		    document.getElementById("timer").innerHTML = hours + " : "
+		    + minutes + " : " + seconds;
+		    if (distance < 00) {
+		        clearInterval(x);
+		        document.getElementById("timer").innerHTML = "EXPIRED";
+		    }
+		}, 1000);
+	</script>
+	
+</head>
+
+<body>
+<!--    						HEADER - 1 layout 			-->
+	<div class="header">
+		<div class="container_header">
+			<div class="logo"></div>
+			<div class="logo_title">ТУРНИК - БРУСЬЯ - ПРЕСС (3 в 1)<br> С ДОСТАВКОЙ ПО ВСЕЙ РОССИИ</div>
+			<div class="call_order">
+				<div class="phone_number">
+					<p><span><img src="css/img/phone.png"></span><a href="tel:+789297002875">8(929)<strong>700-28-75</strong></a></p>
+					<p><button alt="Заказать звонок"><a href="#" class="button">Заказать звонок</a></button></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--    						ORDER - 2 layout 			-->
+	<div class="order">
+		<div class="container_order">
+			<div class="pricing_ellipse_action"><p><s>4 500 р.</s><br><h1><strong> 3 890</strong><h1></div>			
+			<div class="turnik">
+				<span><img src="css/img/rotate_arrow.png"></span>
+				<p id="rotate_arrow_text">Переворачивается<br><strong>за 5 секунд</strong></p>
+			</div>
+			<div class="kach"></div>
+			<div class="form_order">
+				<div class="form_head_key png"><h1>УСПЕЙ КУПИТЬ</h1><p>и наш специалист свяжется с Вами</p>
+				</div>
+				<div class="form_order_data">
+					<div class="form_action">
+						<input type="text" id="name" name="name" placeholder="Имя"><input type="phone_number" id="phone" name="phone" placeholder="Телефон">
+    					<input type="text" id="mail" name="email" placeholder="E-mail">
+    					<p>
+    					<input type="checkbox" id="order_option" name="vehicle1" value="crossbar_hook"> Крюки для перекладины и тяги (<span>650</span> руб.)<br>
+						<input type="checkbox" id="order_option" name="vehicle2" value="robber_loop"> Резиновые петли (<span>750</span> руб.)<br>
+						</p>
+						<input type="submit" value="заказать">
+					</div>
+				</div>
+				<div class="stock"><h2>АКЦИЯ!</h2>Скидка<br><h2><span>15%<span></h2></div>
+				<div class="stock_time">
+					<p id="timer_end_text">До конца акции осталось:</p>
+					<p id="timer"></p>
+					<p id="timer_date">часов минут секунд</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--    						ADVANTAGES - 3 layout 			-->
+	<div class="advantages">
+		<div class="container_advantages">
+			<div class="first_row">
+				<div class="happy_m"><img src="css/img/att_musc_m.png" alt=""><h2>Более 3 000</h2><p>довольных спортсменов</p></div>
+				<div class="weight"><img src="css/img/att_weighed.png" alt=""><h2>Нагрузка до 300 кг</h2></div>
+				<div class="guarantee"><img src="css/img/att_garantee.png" alt=""><h2>3 года гарантии</h2></div>
+			</div>
+			<div class="second_row">
+				<div class="return"><img src="css/img/att_delivere.png"><h2>10 дней на возврат</h2><p>(без скандалов и экспертиз)</p></div>
+				<div class="delivery"><img src="css/img/att_track.png"><h2>Доставка</h2><p>(по желанию)</p></div>
+				<div class="installation"><img src="css/img/att_inst.png"><h2>Установка</h2><p>(по желанию)</p></div>
+			</div>
+		</div>
+	</div>
+
+<!--    						characteristic - 4 layout 			-->
+
+	<div class="characteristic">
+		<div class="container_characteristic">
+			<div class="head">характеристики</div>
+			<div class="price_img_turnik"></div>
+		</div>
+	</div>
+
+
+
+<!--  =============================== javascript =======================  -->	
+
+
+</body>
+
+
+</html>
+
