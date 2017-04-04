@@ -7,12 +7,15 @@ body
 	padding: 0
 
 // 		==========================   		MAIN OPTION
-	button:focus 
-		outline: none
-	textarea:focus
-		outline: none
-	input:focus
-		outline: none
+button:focus 
+	outline: none
+textarea:focus
+	outline: none
+input:focus
+	outline: none
+input
+	outline: none
+
 
 	
 
@@ -27,7 +30,6 @@ body
 		max-width: 970px
 		margin: 10px auto 0
 	.logo
-
 		width: 80px
 		height: 80px
 		background-image: url("#{$get-path-to-img}/logo.png")
@@ -59,10 +61,12 @@ body
 		background-color: rgb(0, 153, 0)
 		width: 250px
 		height: 35px
-		border: 0
+		border: none
 		outline: 0
 		&:hover
 			transform: scale(1.09)
+			-webkit-transform: scale(1.09)
+			-ms-transform: scale(1.09)
 		a
 			color: rgb(255, 255, 255)
 			line-height: 1.2
@@ -91,6 +95,8 @@ body
 		font-size: 1.2em
 		&:hover
 			transform: scale(1.1)
+			-webkit-transform: scale(1.09)
+			-ms-transform: scale(1.09)
 		p
 			font-family: "HelveticaNeueCyr-Light"
 			margin-left: 22px
@@ -158,9 +164,9 @@ body
 				border: 0px
 				background-color: rgb(245, 245, 245)
 		p 
-			display: inline
+			display: inline-block
 			line-height: 1.8
-			margin: 2% 0
+			margin: 0
 			font-size: 11pt
 			font-family: "HelveticaNeueCyr-Light"
 			input[type="checkbox"]:before
@@ -179,6 +185,8 @@ body
 			line-height: 1.2
 			&:hover
 				transform: scale(1.09)
+				-ms-transform: scale(1.09)
+				-webkit-transform: scale(1.09)
 		span
 			color: red
 	.stock
@@ -208,7 +216,7 @@ body
 			padding-top: 3px
 			font-size: 2.5em
 		p#timer_date 
-			word-spacing: 40px
+			word-spacing: 30px
 			font-size: 0.8em
 			padding-top: 3px
 
@@ -309,7 +317,7 @@ body
 		h2 
 			display: inline
 	.right_head_price
-		margin-left: 300px
+		margin-left: 303px
 		position: absolute
 		height: 60px
 		padding: 15px
@@ -318,6 +326,8 @@ body
 		z-index: 15
 		&:hover
 			transform: scale(1.09)
+			-webkit-transform: scale(1.09)
+			-ms-transform: scale(1.09)
 	.turnik_image_small
 		margin-top: 5px
 	img 
@@ -365,6 +375,8 @@ body
 		margin-left: 1%
 		&:hover
 			transform: scale(1.09)
+			-webkit-transform: scale(1.09)
+			-ms-transform: scale(1.09)
 
 // 		==========================		 description - 6 === layout
 .description
@@ -388,3 +400,68 @@ body
 		font-family: "HelveticaNeueCyr-Light"
 		color: rgb(255, 255, 255)
 		margin-bottom: 18px
+
+// 		==========================		 related_products - 7 === layout
+.related_products
+	width: 100%
+	height: 660px
+	background-image: url("#{$get-path-to-img}/bg_related_products.png")
+	background-size: cover
+	.container_related_products
+		max-width: 970px
+		margin: 0 auto
+	.title_related_products
+		font-family: "HelveticaNeueCyr-Light"
+		color: rgb(51, 51, 51)
+		font-size: 2.2em
+		text-transform: uppercase
+		text-align: center
+		padding: 3% 0
+	.hook_container
+		width: 100%
+	.hook_image
+		background-image: url("#{$get-path-to-img}/hooks.png")
+		width: 300px
+		height: 225px
+		float: left
+		color: rgb(255, 255, 255)
+		font-family: "HelveticaNeueCyr-Light"
+		font-size: 1.2em
+		text-align: center
+		.hook_image_title
+			padding: 6px
+			width: 100%
+			height: 40px
+			background-color: rgb(51, 51, 51)
+
+	.hook_text
+		float: right
+		width: 67%
+		font-size: 1.15em
+		line-height: 1.2
+		color: rgb(51, 51, 51)
+		font-family: "HelveticaNeueCyr-Light"
+	.loop_container
+		width: 100%
+	.loop_image
+		margin-top: 20px
+		background-image: url("#{$get-path-to-img}/loom_crossbar.png")
+		width: 300px
+		height: 225px
+		float: left
+		color: rgb(255, 255, 255)
+		font-family: "HelveticaNeueCyr-Light"
+		font-size: 1.1em
+		text-align: center
+		.loop_image_title
+			padding: 8px
+			width: 100%
+			height: 40px
+			background-color: rgb(51, 51, 51)
+	.loop_text
+		float: right
+		width: 67%
+		font-size: 1.15em
+		line-height: 1.2
+		color: rgb(51, 51, 51)
+		font-family: "HelveticaNeueCyr-Light"
