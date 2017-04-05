@@ -8,27 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery-3.2.0.min.js"></script>
-<!-- Timer in 2 layout -->
-	<script>
-		var countDownDate = new Date("Apr 6, 2017 00:00:00").getTime();
-		var x = setInterval(function() {
-		    var now = new Date().getTime();
-		    var distance = countDownDate - now;
-		    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-		    document.getElementById("timer").innerHTML = hours + " : "
-		    + minutes + " : " + seconds;
-		    if (distance < 00) {
-		        clearInterval(x);
-		        document.getElementById("timer").innerHTML = "Акция закончилась";
-		    }
-		}, 1000);
-	</script>
-	<script type="text/javascript">
-		
+	<link rel="stylesheet" type="text/css" href="css/jquery.countdown.css"> 
 
-	</script>
+<!-- Timer in 2 layout -->
+
 </head>
 
 <body>
@@ -235,7 +218,8 @@
 				<div class="stock"><h2>АКЦИЯ!</h2>Скидка<br><h2><span>15%<span></h2></div>
 				<div class="stock_time">
 					<p id="timer_end_text">До конца акции осталось:</p>
-					<p id="timer"></p>
+					<p id="timer2"></p>
+					<p id="timer_off2"></p>
 					<p id="timer_date">часов минут секунд</p>
 				</div>
 			</div>
@@ -258,7 +242,37 @@
 
 <!--  =============================== javascript =======================   -->	
 </body>
-
-
+	<script>
+		var countDownDate = new Date("Apr 6, 2017 00:00:00").getTime();
+		var x = setInterval(function() {
+		    var now = new Date().getTime();
+		    var distance = countDownDate - now;
+		    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		    document.getElementById("timer").innerHTML = hours + " : "
+		    + minutes + " : " + seconds;
+		    if (distance < 00) {
+		        clearInterval(x);
+		        document.getElementById("timer").innerHTML = "Акция закончилась";
+		    }
+		}, 1000);
+	</script>
+	<script>
+		var countDownDate = new Date("Apr 6, 2017 00:00:00").getTime();
+		var x = setInterval(function() {
+		    var now = new Date().getTime();
+		    var distance = countDownDate - now;
+		    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		    document.getElementById("timer2").innerHTML = hours + " : "
+		    + minutes + " : " + seconds;
+		    if (distance < 00) {
+		        clearInterval(x);
+		        document.getElementById("timer2").innerHTML = "Акция закончилась";
+		    }
+		}, 1000);
+	</script>
 
 </html>

@@ -819,7 +819,7 @@ input {
     height: 100px; }
     .order_bottom .stock_time p#timer_end_text {
       padding-top: 7px; }
-    .order_bottom .stock_time p#timer {
+    .order_bottom .stock_time p#timer2 {
       color: red;
       padding-top: 3px;
       font-size: 2.5em; }
