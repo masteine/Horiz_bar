@@ -10,7 +10,7 @@
 	<script src="js/jquery-3.2.0.min.js"></script>
 <!-- Timer in 2 layout -->
 	<script>
-		var countDownDate = new Date("Apr 5, 2017 00:00:00").getTime();
+		var countDownDate = new Date("Apr 6, 2017 00:00:00").getTime();
 		var x = setInterval(function() {
 		    var now = new Date().getTime();
 		    var distance = countDownDate - now;
@@ -21,11 +21,14 @@
 		    + minutes + " : " + seconds;
 		    if (distance < 00) {
 		        clearInterval(x);
-		        document.getElementById("timer").innerHTML = "EXPIRED";
+		        document.getElementById("timer").innerHTML = "Акция закончилась";
 		    }
 		}, 1000);
 	</script>
-	
+	<script type="text/javascript">
+		
+
+	</script>
 </head>
 
 <body>
@@ -150,20 +153,112 @@
 			</div>
 			<div class="loop_container">
 				<div class="loop_image"><div class="loop_image_title"><p>Резиновые петли</p></div></div>
-				<div class="loop_text"><p>Резиновые петли широко применяются в STREET WORKOUT в процессе:<br>- растяжки и разминки;<br>- обучения подтягиваниям, отжиманиям (ассистирующая функция);<br>- освоения сложных гимнастических упражнений на кольцах, брусьях и турнике (ассистирующая функция);<br>- развития взрывной силы и скоростно-силовых качеств;<br>- поддержания физических кондиций вне спортзала;<br>- реабилитации и восстановления.</p></div>
+				<div class="loop_text"><p><strong>Резиновые петли</strong> широко применяются в STREET WORKOUT в процессе:<br>- растяжки и разминки;<br>- обучения подтягиваниям, отжиманиям (ассистирующая функция);<br>- освоения сложных гимнастических упражнений на кольцах, брусьях и турнике (ассистирующая функция);<br>- развития взрывной силы и скоростно-силовых качеств;<br>- поддержания физических кондиций вне спортзала;<br>- реабилитации и восстановления.</p></div>
+			</div>
+		</div>
+	</div>
+
+<!--    						video - 8 layout 			-->
+	<div class="video">
+		<div class="container_video">
+			<div class="video_title">видео</div>
+			<div class="motivation"><img src="css/img/motivation_train.png"></div>
+			<div class="video_feedback">
+				<p>Видео Отзыв о Домашнем Турник Брусья Пресс 3 в 1:</p>
+				<p><iframe width="480" height="300" src="https://www.youtube.com/embed/xPs8rESKR44" frameborder="0" allowfullscreen></iframe></p></div>
+			<div class="video_review">
+				<p>Видео обзор турника тра-та-та:</p>
+				<p><iframe width="480" height="300" src="https://www.youtube.com/embed/xPs8rESKR44" frameborder="0" allowfullscreen></iframe></p>
+			</div>
+		</div>
+	</div>
+
+<!--    						reviews - 9 layout 			-->
+	<div class="reviews">
+		<div class="conteiner_reviews">
+			<div class="reviews_title">отзывы</div>
+			<div class="reviews_1"><p><img src="css/img/reviews_1.png">“ Здравствуйте! Заказал турник 3/1. Больше всего переживал за ответственность поставки да и конторы в целом.Всё что произошло дальше зашкаливает за 5 балов.прием заказа,оплата и доставка- вобщем организация просто супер.через 3 дня я забрал турник как и обещали! Приятно иметь дело с такими людьми,подсказали и помогли.Огромное спасибо что работаете чисто и предоставлеными товарами дарите людям здоровье! Ребята и девушки сайт честный и проверенный,рекомендую!!!!”<br><span> Сергей Афонин</span></p></div>
+			<div class="reviews_2"><p><img src="css/img/reviews_2.png">“ Привет) Заказала турник молодому человеку на 23. Вообще турник - это моя первая интернет- покупка, очень переживала, что может быть обман или ещё что-то, но как оказалось зря =) Оплатила заказ и уже через 3 дня турник приехал ко мне домой) Все детали на месте...всё круто. Заказывайте смело ! ”<br><span>Аленка Колесникова</span></p></div>
+			<div class="reviews_3"><p><img src="css/img/reviews_3.png">Всем привет! Так же хочу оставить и свой отзыв. Решил заказать обратный звонок и узнать, что да как. Перезвонили мне спустя минут 15, предложил несколько вариантов доставки на выбор по времени (о предоплате речь даже и не шла), либо завтра, либо сегодня но с 22.00 по 23.00. Естественно сегодня. Товар доставлен как и было обещано. Упакован, скомплектован и без дефектов. Собственно и всё, понравилось, заказал, привезли, оплатил. Ребенок опробовал первый, ткнул ножнями в подлокотник и проделал дырочку. Значит служить будет долго и честно. Спасибо, так держать!!! ”<br><span>Дмитрий Топольский</span></p></div>
+		</div>
+	</div>
+
+<!--    						result - 10 layout 			-->
+
+	<div class="result">
+		<div class="container_result">
+			<div class="result_title">до и после тренировок</div>
+			<div class="gallery_container">
+				<div class="result_1">
+					<div class="result_1_text_before"><p>До</p></div>
+					<div class="result_1_text_after"><p>После</p></div>
+				</div>
+				<div class="result_2">
+					<div class="result_2_text_before"><p>До</p></div>
+					<div class="result_2_text_after"><p>После</p></div>
+				</div>
+				<div class="result_3">
+					<div class="result_3_text_before"><p>До</p></div>
+					<div class="result_3_text_after"><p>После</p></div>				
+				</div>
+				<div class="result_4">
+					<div class="result_4_text_before"><p>До</p></div>
+					<div class="result_4_text_after"><p>После</p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--    						order_bottom - 11 layout <bottom> 			-->
+	<div class="order_bottom">
+		<div class="container_order">
+			<div class="pricing_ellipse_action"><p><s>4 500 р.</s><br><h1><strong> 3 890</strong></h1></div>			
+			<div class="turnik">
+				<span><img src="css/img/rotate_arrow.png"></span>
+				<p id="rotate_arrow_text">Переворачивается<br><strong>за 5 секунд</strong></p>
+			</div>
+			<div class="kach"></div>
+			<div class="form_order">
+				<div class="form_head_key png"><h1>УСПЕЙ КУПИТЬ</h1><p>и наш специалист свяжется с Вами</p>
+				</div>
+				<div class="form_order_data">
+					<div class="form_action">
+						<input type="text" id="name" name="name" placeholder="Имя"><input type="phone_number" id="phone" name="phone" placeholder="Телефон">
+    					<input type="text" id="mail" name="email" placeholder="E-mail">
+    					<p>
+    					<input type="checkbox" id="order_option" name="vehicle1" value="crossbar_hook"> Крюки для перекладины и тяги (<span>650</span> руб.)<br>
+						<input type="checkbox" id="order_option" name="vehicle2" value="robber_loop"> Резиновые петли (<span>750</span> руб.)<br>
+						</p>
+						<input type="submit" value="заказать">
+					</div>
+				</div>
+				<div class="stock"><h2>АКЦИЯ!</h2>Скидка<br><h2><span>15%<span></h2></div>
+				<div class="stock_time">
+					<p id="timer_end_text">До конца акции осталось:</p>
+					<p id="timer"></p>
+					<p id="timer_date">часов минут секунд</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--    						bottom - 12 layout <bottom> 			-->
+		<div class="bottom">
+		<div class="container_bottom">
+			<div class="logo_title"><span>остались вопросы?</span><br>Закажите обратный звонок и мы вам перезвоним!</div>
+			<div class="call_order">
+				<div class="phone_number">
+					<p><span><img src="css/img/phone.png" alt="Номер телефона"></span><a href="tel:+789297002875">8(929)<strong>700-28-75</strong></a></p>
+					<p><button><a href="#" class="button_link">Заказать звонок</a></button></p>
+				</div>
 			</div>
 		</div>
 	</div>
 
 
-
-
-<!--  =============================== javascript =======================  -->	
-
-
+<!--  =============================== javascript =======================   -->	
 </body>
 
 
 
 </html>
-

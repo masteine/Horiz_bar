@@ -416,9 +416,10 @@ input
 		font-size: 2.2em
 		text-transform: uppercase
 		text-align: center
-		padding: 3% 0
+		padding: 5% 0
 	.hook_container
 		width: 100%
+		display: inline-block
 	.hook_image
 		background-image: url("#{$get-path-to-img}/hooks.png")
 		width: 300px
@@ -429,11 +430,10 @@ input
 		font-size: 1.2em
 		text-align: center
 		.hook_image_title
-			padding: 6px
+			padding: 0.4em
 			width: 100%
 			height: 40px
 			background-color: rgb(51, 51, 51)
-
 	.hook_text
 		float: right
 		width: 67%
@@ -443,18 +443,19 @@ input
 		font-family: "HelveticaNeueCyr-Light"
 	.loop_container
 		width: 100%
-	.loop_image
+		display: inline-block
 		margin-top: 20px
+	.loop_image
+		float: left
 		background-image: url("#{$get-path-to-img}/loom_crossbar.png")
 		width: 300px
 		height: 225px
-		float: left
 		color: rgb(255, 255, 255)
 		font-family: "HelveticaNeueCyr-Light"
 		font-size: 1.1em
 		text-align: center
 		.loop_image_title
-			padding: 8px
+			padding: 0.5em
 			width: 100%
 			height: 40px
 			background-color: rgb(51, 51, 51)
@@ -465,3 +466,412 @@ input
 		line-height: 1.2
 		color: rgb(51, 51, 51)
 		font-family: "HelveticaNeueCyr-Light"
+
+// 		==========================		 video - 8 === layout
+
+.video
+	width: 100%
+	height: 900px
+	background-image: url("#{$get-path-to-img}/bg_video.png")
+	background-size: cover
+	.container_video
+		max-width: 970px
+		margin: 0 auto
+	.video_title
+		font-family: "HelveticaNeueCyr-Light"
+		color: rgb(255, 255, 255)
+		font-size: 2.2em
+		text-transform: uppercase
+		text-align: center
+		padding: 5% 0
+	.motivation
+		float: left
+	.video_feedback
+		float: right
+		display: inline-block
+		color: rgb(255, 255, 255)
+		font-family: "HelveticaNeueCyr-Light"
+	p 
+		padding-bottom: 2em
+	.video_review
+		float: right
+		display: inline-block
+		color: rgb(255, 255, 255)
+		font-family: "HelveticaNeueCyr-Light"
+
+// 		==========================		 video - 9 === layout
+.reviews
+	width: 100%
+	height: 700px
+	background-image: url("#{$get-path-to-img}/bg_characteristic.png")
+	background-size: cover
+	.conteiner_reviews
+		max-width: 970px
+		margin: 0 auto
+		color: rgb(51, 51, 51)
+	.reviews_title
+		font-family: "HelveticaNeueCyr-Light"
+		color: rgb(51, 51, 51)
+		font-size: 2.2em
+		text-transform: uppercase
+		text-align: center
+		padding: 5% 0
+
+	.reviews_1
+		display: inline-block
+		line-height: 1.3
+		font-family: "HelveticaNeueCyr-LightItalic"
+		img 
+			float: left
+			padding-right: 2%
+		span 
+			line-height: 2
+			float: right
+			color: rgb(29, 72, 114)
+	.reviews_2
+		display: inline-block
+		line-height: 1.3
+		font-family: "HelveticaNeueCyr-LightItalic"
+		padding-top: 30px
+		img 
+			float: right
+			padding-left: 2%
+		span 
+			line-height: 2
+			float: right
+			color: rgb(29, 72, 114)
+	.reviews_3
+		display: inline-block
+		line-height: 1.3
+		font-family: "HelveticaNeueCyr-LightItalic"
+		padding-top: 30px
+		img 
+			float: left
+			padding-right: 2%
+		span 
+			line-height: 2
+			float: right
+			color: rgb(29, 72, 114)
+
+// 		==========================		 result - 10 === layout
+.result
+	width: 100%
+	height: 860px
+	background-image: url("#{$get-path-to-img}/bg_description.png")
+	background-size: cover
+	font-family: "HelveticaNeueCyr-Light"
+	display: block
+	.container_result
+		max-width: 970px
+		margin: 0 auto
+	.result_title 
+		color: rgb(255, 255, 255)
+		font-size: 2.2em
+		text-transform: uppercase
+		text-align: center
+		padding: 5% 0
+	.gallery_container
+		width: 768px
+		margin: auto
+	.result_1
+		display: inline-block
+		background-image: url("#{$get-path-to-img}/result_1.png")
+		width: 360px
+		height: 200px
+		text-align: center
+	.result_1_text_before
+		margin-top: 200px
+		display: inline-block
+		width: 50%
+		background-color: rgb(51, 51, 51)
+		font-size: 1.5em
+		color: rgb(250, 228, 0)
+		padding-top: 10px
+		padding-bottom: 10px
+	.result_1_text_after
+		margin-top: 200px
+		display: inline-block	
+		float: right
+		width: 50%	
+		background-color: rgb(250, 228, 0)
+		font-size: 1.5em
+		color: rgb(51, 51, 51)
+		padding-top: 10px
+		padding-bottom: 10px
+
+	.result_2
+		display: inline-block
+		background-image: url("#{$get-path-to-img}/result_2.png")
+		width: 360px
+		height: 200px
+		float: right
+		text-align: center
+
+	.result_2_text_before
+		margin-top: 200px
+		display: inline-block
+		width: 50%
+		background-color: rgb(51, 51, 51)
+		font-size: 1.5em
+		color: rgb(250, 228, 0)
+		padding-top: 10px
+		padding-bottom: 10px
+	.result_2_text_after
+		margin-top: 200px
+		display: inline-block	
+		float: right
+		width: 50%	
+		background-color: rgb(250, 228, 0)
+		font-size: 1.5em
+		color: rgb(51, 51, 51)
+		padding-top: 10px
+		padding-bottom: 10px
+	.result_3
+		margin-top: 50px
+		display: inline-block
+		background-image: url("#{$get-path-to-img}/result_3.png")
+		width: 360px
+		height: 325px
+		float: left
+		text-align: center
+	.result_3_text_before
+		margin-top: 325px
+		display: inline-block
+		width: 50%
+		background-color: rgb(51, 51, 51)
+		font-size: 1.5em
+		color: rgb(250, 228, 0)
+		padding-top: 10px
+		padding-bottom: 10px
+	.result_3_text_after
+		margin-top: 325px
+		display: inline-block	
+		float: right
+		width: 50%	
+		background-color: rgb(250, 228, 0)
+		font-size: 1.5em
+		color: rgb(51, 51, 51)
+		padding-top: 10px
+		padding-bottom: 10px
+	.result_4
+		margin-top: 50px
+		display: inline-block
+		background-image: url("#{$get-path-to-img}/result_4.png")
+		width: 360px
+		height: 325px
+		float: right
+		text-align: center
+	.result_4_text_before
+		margin-top: 325px
+		display: inline-block
+		width: 50%
+		background-color: rgb(51, 51, 51)
+		font-size: 1.5em
+		color: rgb(250, 228, 0)
+		padding-top: 10px
+		padding-bottom: 10px
+	.result_4_text_after
+		margin-top: 325px
+		display: inline-block	
+		float: right
+		width: 50%	
+		background-color: rgb(250, 228, 0)
+		font-size: 1.5em
+		color: rgb(51, 51, 51)
+		padding-top: 10px
+		padding-bottom: 10px	
+
+// 		==========================		order_bottom  - 11 === layout
+
+.order_bottom
+	width: 100%
+	height: 500px
+	background-image: url("#{$get-path-to-img}/back_to_buy.png")
+	background-size: cover
+	z-index: -1
+	.container_order
+		max-width: 970px
+		margin: 0 auto
+	.pricing_ellipse_action
+		margin-left: 175px
+		margin-top: 12px
+		width: 125px
+		height: 125px
+		position: absolute
+		background-image: url("#{$get-path-to-img}/pricing_elipse.png")
+		background-repeat: no-repeat
+		z-index: 2
+		font-size: 1.2em
+		&:hover
+			transform: scale(1.1)
+			-webkit-transform: scale(1.09)
+			-ms-transform: scale(1.09)
+		p
+			font-family: "HelveticaNeueCyr-Light"
+			margin-left: 22px
+			margin-top: 30px
+		h1
+			font-family: "HelveticaNeueCyr-Bold"
+			margin-left: 22px
+			color: red
+	.turnik
+		background-image: url("#{$get-path-to-img}/turnik.png")
+		background-repeat: no-repeat
+		position: absolute
+		width: 362px
+		height: 401px
+		z-index: 1
+		margin-top: 20px
+	p#rotate_arrow_text
+		margin-top: 410px
+		float: right
+		text-align: left
+		margin-right: 150px
+		font-family: "HelveticaNeueCyr-Light"
+		line-height: 1.2
+		font-size: 1.1em
+	img 
+		float: left
+		margin-top: 415px
+	.kach
+		background-image: url("#{$get-path-to-img}/kach.png")
+		background-repeat: no-repeat
+		position: absolute
+		width: 265px
+		height: 400px
+		margin-top: 100px
+		margin-left: 272px
+	.form_order
+		margin-top: 20px
+		float: right
+	.form_head_key
+		font-family: "HelveticaNeueCyr-Light"
+		text-align: center
+		color: rgb(255, 255, 255)
+		width: 350px
+		height: 60px
+		padding: 5px
+		background-image: url("#{$get-path-to-img}/form_head_key.png") 
+	h1
+		font-family: "HelveticaNeueCyr-Bold"
+		font-size: 1.5em
+	p 
+		font-size: 1.1em
+	.form_order_data
+		border: 10px solid white
+		background-color: white
+		.form_action
+			line-height: 1.3
+			width: 330px
+			input[type="text"], input[type="phone_number"]
+				font-family: "HelveticaNeueCyr-Italic"
+				width: 95%
+				padding: 12px 10px
+				margin: 5px 0
+				display: inline
+				font-size: 14pt
+				border: 0px
+				background-color: rgb(245, 245, 245)
+		p 
+			display: inline-block
+			line-height: 1.8
+			margin: 0
+			font-size: 11pt
+			font-family: "HelveticaNeueCyr-Light"
+			input[type="checkbox"]:before
+				border-style: solid
+				border: 1px
+
+		input[type="submit"]
+			background: url("#{$get-path-to-img}/order_button_layout_2.png") no-repeat 
+			border: none
+			width: 100%
+			height: 60px
+			text-transform: uppercase
+			color: rgb(255, 255, 255)
+			font-family: "HelveticaNeueCyr-Light"
+			font-size: 1.5em
+			line-height: 1.2
+			&:hover
+				transform: scale(1.09)
+				-ms-transform: scale(1.09)
+				-webkit-transform: scale(1.09)
+		span
+			color: red
+	.stock
+		float: left
+		font-size: 0.9em
+		font-family: "HelveticaNeueCyr-Light"
+		padding-top: 25px
+		text-align: center
+		margin-top: 5px
+		background: url("#{$get-path-to-img}/stock_square.png") no-repeat
+		width: 100px
+		height: 110px
+	span
+		color: red
+	.stock_time
+		text-align: center
+		font-family: "HelveticaNeueCyr-Light"
+		float: left
+		margin-top: 15px
+		background-color: rgb(255, 255, 255)
+		width: 71%
+		height: 100px
+		p#timer_end_text 
+			padding-top: 7px
+		p#timer 
+			color: red
+			padding-top: 3px
+			font-size: 2.5em
+		p#timer_date 
+			word-spacing: 30px
+			font-size: 0.8em
+			padding-top: 3px
+
+// 		==========================		bottom  - 12 === layout
+.bottom
+	width: 100%
+	height: 100%
+	font-family: "HelveticaNeueCyr-Light"
+	.container_bottom
+		height: 95px
+		max-width: 970px
+		margin: 10px auto 0
+	.logo_title
+		padding-top: 1%
+		float: left
+		color: rgb(51, 51, 51)
+		line-height: 1.2
+		font-size: 1.5em
+		span
+			text-transform: uppercase
+	.call_order
+		float: right
+	p 
+		vertical-align: 50%
+	span
+		padding-right: 14px
+	a
+		vertical-align: 5px
+		font-size: 1.8em
+		line-height: 1.7
+		color: rgb(51, 51, 51)
+		text-decoration: none
+	&:hover
+		text-decoration: none
+	button
+		background-color: rgb(0, 153, 0)
+		width: 250px
+		height: 35px
+		border: none
+		outline: 0
+		&:hover
+			transform: scale(1.09)
+			-webkit-transform: scale(1.09)
+			-ms-transform: scale(1.09)
+		a
+			color: rgb(255, 255, 255)
+			line-height: 1.2
+			font-family: "HelveticaNeueCyr-Light"
+			font-size: 1.375em
